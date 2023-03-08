@@ -1,0 +1,302 @@
+#project-detail {
+  width: 100%;
+  /* overflow-x: hidden; */
+  /* border: 2px solid pink; */
+  display: grid;
+  place-items: center;
+  background: url(../../assets/Desktop\ -\ 4.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project__detail__container {
+  /* border: 2px solid red; */
+  width: 90%;
+}
+
+/* project details header section  */
+#project-detail .project__details__header {
+  /* border: 5px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+  /* background: url(../../assets/Desktop\ -\ 3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  color: white;
+}
+.project__details__header .header__container {
+  /* border: 2px solid red; */
+  /* margin-top: 10rem; */
+  /* width: 80%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 20px;
+}
+.project__details__header h1 {
+  /* border: 2px solid yellow; */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  /* line-height: 85px; */
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-shadow: 0px 6px 24px rgba(0, 0, 0, 0.25);
+}
+.project__details__header p {
+  /* border: 2px solid blueviolet; */
+  width: 70%;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  /* line-height: 22px; */
+  text-align: center;
+  /* text-transform: capitalize; */
+  color: #ffffff;
+}
+.project__details__header .btns {
+  /* border: 2px solid aqua; */
+  display: flex;
+  gap: 4rem;
+}
+
+/* project detail image section */
+#project-detail .project__detial-container {
+  /* border: 2px solid palevioletred; */
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#project-detail .project__detial-container .project__detail__wrapper {
+  width: 600px;
+  height: 500px;
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(65, 65, 65, 0.3) 0%,
+    rgba(69, 69, 69, 0.1) 100%
+  );
+  box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.25),
+    10px 12px 64px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(22.5px);
+  border-radius: 54px;
+}
+
+.project__detial-container .project__detail-image {
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+}
+.project__detial-container .project__detail-image img {
+  border-radius: 30px;
+}
+
+/* project features */
+#project-detail section.container {
+  width: 80%;
+  padding: 50px 0;
+}
+#project-detail section.container h2 {
+  /* border: 2px solid gold; */
+  width: 50%;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  /* line-height: 56px; */
+  text-transform: capitalize;
+  color: #ffffff;
+  text-shadow: 0px 6px 24px rgba(0, 0, 0, 0.25);
+}
+/* the below line of code targets all the p tags except those present in the tools__used section because we don't want to target the p tags in the skills component-- hence we use the css "not" operator */
+#project-detail section.container p:not(.tools__used p) {
+  /* border: 2px solid goldenrod; */
+  width: 80%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#project-detail .project__detail__container .project__overview {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+#project-detail .project__detail__container .tools__used {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+#project-detail .project__detail__container .see__prototype {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.see__prototype .btns {
+  text-transform: capitalize;
+  width: 50%;
+  display: flex;
+  gap: 4rem;
+}
+
+/* tables screens */
+@media screen and (max-width: 1024px) {
+  #project-detail {
+    background: url(../../assets/iPhone\ 13\ mini\ -\ 5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .project__details__header .header__container {
+    width: 100%;
+    gap: 3rem;
+  }
+  .project__details__header h1 {
+    font-size: 40px;
+  }
+
+  .project__details__header p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .project__details__header .btns {
+    gap: 1.5rem;
+  }
+
+  /* image */
+  #project-detail .project__detial-container .project__detail__wrapper {
+    width: 500px;
+    height: 350px;
+    /* padding-top: 100px; */
+  }
+  .project__detial-container .project__detail-image {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .project__detial-container .project__detail-image img {
+    border-radius: 30px;
+  }
+
+  /* project features */
+  #project-detail section.container {
+    width: 80%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  #project-detail section.container h2 {
+    width: 70%;
+    font-size: 40px;
+    line-height: 56px;
+  }
+  /* the below line of code targets all the p tags except those present in the tools__used section because we don't want to target the p tags in the skills component-- hence we use the css "not" operator */
+  #project-detail section.container p:not(.tools__used p) {
+    width: 80%;
+  }
+  .see__prototype .btns {
+    padding: 0px 10px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 600px) {
+  .project__detail__container {
+    width: 90%;
+  }
+  #project-detail .project__details__header {
+    height: 70vh;
+  }
+  .project__details__header .header__container {
+    gap: 2rem;
+  }
+  .project__details__header .btns {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .project__details__header h1 {
+    width: 90%;
+    font-size: 32px;
+  }
+
+  .project__details__header p {
+    width: 85%;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .project__details__header .btns {
+    gap: 1.5rem;
+  }
+
+  /* image */
+  #project-detail .project__detial-container .project__detail__wrapper {
+    width: 340px;
+    height: 300px;
+    /* padding-top: 100px; */
+  }
+  .project__detial-container .project__detail-image {
+    width: 250px;
+    height: 260px;
+    border-radius: 10px;
+  }
+  .project__detial-container .project__detail-image img {
+    border-radius: 30px;
+  }
+
+  /* project features */
+  #project-detail section.container {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  #project-detail section.container h2 {
+    width: 90%;
+    font-size: 32px;
+  }
+  /* the below line of code targets all the p tags except those present in the tools__used section because we don't want to target the p tags in the skills component-- hence we use the css "not" operator */
+  #project-detail section.container p:not(.tools__used p) {
+    width: 90%;
+  }
+  .see__prototype .btns {
+    /* margin-top: 20px; */
+    padding: 0px 10px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

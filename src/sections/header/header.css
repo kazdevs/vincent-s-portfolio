@@ -1,0 +1,206 @@
+header {
+  /* border: 2px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  /* width: 100vw; */
+  /* background: url(../../assets/portfolio-bg.jpg); */
+  /* background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* overflow-x: hidden; */
+}
+.header__container {
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid red; */
+  /* margin-top: 4rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  position: absolute;
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: #000000cc; */
+}
+.hey-div {
+  /* border: 2px solid red; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 0; */
+}
+header h1 {
+  /* border: 2px solid green; */
+  /* width: 846px;
+  height: 85px; */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-shadow: 0px 6px 24px rgba(0, 0, 0, 0.25);
+}
+.p__container {
+  /* border: 2px solid rebeccapurple; */
+  /* border: 2px solid violet; */
+  /* height: auto; */
+  overflow: hidden;
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+header .p__container p {
+  /* border: 2px solid rebeccapurple; */
+  width: 846px;
+  height: 44px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* text-transform: capitalize; */
+  /* text-transform: lowercase; */
+  text-transform: none;
+  color: #ffffff;
+}
+.header__link-wrapper {
+  /* border: 2px solid white; */
+  overflow: hidden;
+}
+header .header__socials {
+  /* border: 5px solid red; */
+  position: absolute;
+  width: 80px;
+  height: 350px;
+  left: 0px;
+  top: 280px;
+  background: rgba(246, 246, 246, 0.1);
+  backdrop-filter: blur(33.5px);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+header .header__socials .social__links-container svg {
+  /* border: 2px solid red; */
+  width: 28px;
+  height: 28px;
+  color: #f6f6f6;
+  transition: var(--transition);
+}
+
+header .header__socials .social__links-container svg:hover {
+  color: var(--primary-color);
+  scale: 1.2;
+}
+.social__links-container {
+  /* border: 10px solid olivedrab; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__container {
+    /* border: 2px solid blue; */
+  }
+  .hey-div {
+    width: 35rem;
+  }
+  /* header h1 {
+  } */
+  header .header__socials {
+    display: none;
+  }
+  header .p__container p {
+    /* border: 2px solid green; */
+    width: 446px;
+    font-weight: 350;
+    font-size: 16px;
+    /* line-height: 19px; */
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 600px) {
+  .header__container {
+    /* border: 2px solid green; */
+    /* margin-top: 3rem;
+    gap: 28px;
+    width: 90%; */
+  }
+  .hey-div {
+    width: 90%;
+  }
+  header h1 {
+    /* border: 2px solid red; */
+    height: auto;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .p__container {
+    /* border: 2px solid blueviolet; */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .header__socials {
+    display: none;
+  }
+  header .p__container p {
+    /* border: 2px solid green; */
+    width: 95%;
+    /* height: 76px; */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+}

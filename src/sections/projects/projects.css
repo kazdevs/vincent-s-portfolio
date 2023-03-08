@@ -1,0 +1,79 @@
+#projects {
+  /* border: 2px solid green; */
+  display: grid;
+  place-items: center;
+  padding: 5rem 0;
+}
+.projects__container {
+  /* border: 2px solid rebeccapurple; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+.projects__first-p {
+  /* border: 2px solid red; */
+  width: 80%;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  /* text-transform: capitalize; */
+  color: #ffffff;
+  margin-top: 40px;
+}
+.projects__wrapper {
+  /* border: 2px solid royalblue; */
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.behance__and__dribbble {
+  /* margin-top: 30px; */
+  /* border: 2px solid saddlebrown; */
+  width: 60%;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: #ffffff;
+  /* align-self: flex-start;
+  justify-self: flex-start; */
+  margin-top: 100px;
+}
+.behance__and__dribbble span a {
+  color: var(--primary-color);
+}
+/* .behance__and__dribbble span .dribbble a {
+  border: 2px solid gold;
+  color: #ffffff;
+} */
+
+@media screen and (max-width: 1024px) {
+  .projects__first-p {
+    /* width: 431px; */
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .behance__and__dribbble {
+    /* width: 420px; */
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects__first-p {
+    /* width: 331px; */
+    font-weight: 300;
+  }
+  .behance__and__dribbble {
+    /* width: 313px; */
+    text-align: center;
+  }
+}

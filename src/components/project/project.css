@@ -1,0 +1,169 @@
+.project {
+  /* border: 2px solid green; */
+  width: 90%;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.project h1 {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 180px;
+  height: 286px;
+  right: 140px;
+  top: -160px;
+  font-family: 'Post No Bills Colombo ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 178.511px;
+  line-height: 566px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #8d8c8a 0%, rgba(141, 140, 138, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  z-index: -5;
+}
+.project__item {
+  padding: 20px 0;
+  border: 2px solid var(--primary-color);
+  width: 70%;
+  height: 25rem;
+  background: linear-gradient(
+    180deg,
+    rgba(65, 65, 65, 0.3) 0%,
+    rgba(69, 69, 69, 0.1) 100%
+  );
+  box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.25),
+    10px 12px 64px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.5px);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  /* opacity: 1; */
+}
+.project__image-container {
+  /* border: 2px solid orangered; */
+  width: 260px;
+  height: 300px;
+  border-radius: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project__image-container img {
+  border-radius: 44px;
+  object-fit: cover;
+}
+.project__details {
+  /* border: 2px solid rebeccapurple; */
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  /* opacity: 1; */
+}
+.project__details h3 {
+  /* border: 2px solid salmon; */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-shadow: 0px 6px 24px rgba(0, 0, 0, 0.25);
+}
+.project__details p {
+  /* border: 2px solid salmon; */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  text-shadow: 0px 6px 24px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1024px) {
+  .project {
+    /* border: 2px solid green; */
+    width: 100%;
+  }
+  .project__item {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .project__image-container {
+    width: 287px;
+    height: 211px;
+  }
+  .project__details {
+    /* border: 2px solid green; */
+    width: 95%;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .project__details h3 {
+    /* border: 2px solid goldenrod; */
+    font-size: 24px;
+  }
+  .project__details p {
+    width: 293px;
+  }
+  .project h1 {
+    /* border: 2px solid red; */
+    width: 160px;
+    height: 166px;
+    right: 0px;
+    top: -100px;
+    font-weight: 800;
+    font-size: 130px;
+    line-height: 566px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project__item {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .project__image-container {
+    width: 250px;
+    height: 211px;
+  }
+  .project__details {
+    /* border: 2px solid red; */
+    width: 95%;
+    align-items: center;
+    text-align: center;
+  }
+  .project__details h3 {
+    /* border: 2px solid goldenrod; */
+    font-size: 28px;
+  }
+  .project__details p {
+    width: 250px;
+  }
+  .project h1 {
+    /* border: 2px solid red; */
+    width: 160px;
+    height: 166px;
+    right: 0px;
+    top: -100px;
+    font-weight: 800;
+    font-size: 130px;
+    line-height: 566px;
+  }
+}
